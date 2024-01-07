@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>News Shuttle</title>
+  </head>
+  <body>
+    
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="download.jpg" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex" >
+                    <li class="hover-link nav-item" id="ipl" onclick="orNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="orNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="orNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button type="button" class="search-button" id="search-button">Search</button>
+                
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+    
+
+
+    <main>
+      <div class="cards-container container flex" id="cards-container">
+        <div class="card">
+          <div class="card-header">
+            <img src="/400x200" alt="image">
+
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h2 class="news-source" id="news-source">End gadget 19/12/2023</h2>
+            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vitae exercitationem beatae sed cumque nisi, neque ea odit esse sapiente voluptate rerum ipsa soluta excepturi, expedita dolore. Impedit, nihil cumque?</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img src="https://via.placeholder.com/400x200" alt="image" id="news-img">
+
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h2 class="news-source" id="news-source">End gadget 19/12/2023</h2>
+          <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vitae exercitationem beatae sed cumque nisi, neque ea odit esse sapiente voluptate rerum ipsa soluta excepturi, expedita dolore. Impedit, nihil cumque?</p>
+        </div>
+      </div>
+    </div>
+    </template>
+
+
+
+
+
+
+    <script src="script.js"></script>
+   
+  </body>
+</html>
